@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #330000, #660000, #ff4655, #990000);
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    background-attachment: fixed;
+}
+body p{
+    font-family: 'Poppins', sans-serif;
+}
+body h2{
+    letter-spacing: 1px;
+}
+
+.cont {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cont div {
+   
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cont div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: linear-gradient(135deg, #1a1a1a 20%, #2a2a2a 80%);
+    background-image: url('img/VALORANT_Logo_V_thumbnail.webp'); 
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 70, 85, 0.5);
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0.9; 
+     }
+.play-button {
+    position: absolute;
+    bottom: 20px;
+    background: linear-gradient(45deg, #ff4655, #ff2e63);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(255, 70, 85, 0.8);
+    transition: 0.3s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.play-button:hover {
+    background: linear-gradient(45deg, #ff2e63, #ff4655);
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 70, 85, 1);
+}
+.news {
+    grid-column: span 2;
+    background-image: url('img/ValorantWallpaper_Icebox.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white;
+}
+.news-text p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+
+.news-text button {
+    background: linear-gradient(45deg, #ff4655, #ff2e63);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.news-text button:hover {
+    background: linear-gradient(45deg, #ff2e63, #ff4655);
+    transform: scale(1.1);
+}
+
+.ranking {
+    grid-row: span 2;
+    background-image: url('img/VALORANT_Jett_Dark.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white;
+}
+
+.quiz {
+    grid-column: span 2;
+    grid-row: 2/4;
+    background-image: url('img/Beta\ Key\ Art_VALORANT.webp'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white;
+}
+.text-box {
+    background: rgba(0, 0, 0, 0.75); 
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(8px); 
+}
+.text-box h2 {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+.text-box p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 10px;
+}
+
+.text-box button {
+    background: linear-gradient(45deg, #ff4655, #ff2e63);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.text-box button:hover {
+    background: linear-gradient(45deg, #ff2e63, #ff4655);
+    transform: scale(1.1);
+}
+
+.clips {
+    background-image: url('img/Wallpaper_Schematic_Weapons.webp'); 
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    grid-column: 2/-1; 
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(255, 70, 85, 0.5);
+    text-align: center;
+    position: relative;
+    width: 100%;
+    min-height: 300px; 
+}
+
+.clips h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 10px rgba(255, 70, 85, 0.8);
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.clips iframe {
+    width: 90%;
+    max-width: 900px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: lightgray;
+    transform: scale(1.05);
+}
+.news-text, .ranking-text {
+    background: rgba(0, 0, 0, 0.75); 
+    padding: 15px 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(8px);
+}
+
+.news-text h2, .ranking-text h2 {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 600px) {
+    .cont {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        gap: 15px;
+    }
+
+    .img {
+        grid-row: auto; 
+    }
+
+    .news, .ranking, .quiz, .clips {
+        grid-column: auto; 
+        grid-row: auto;
+    }
+}
